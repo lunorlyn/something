@@ -1,0 +1,244 @@
+
+
+*******************************************************************************
+*                                                                             *
+*      MCP Server Bridge Attached (enabled , not running, not connected)      *
+*                                                                             *
+*******************************************************************************
+
+
+************* Preparing the environment for Debugger Extensions Gallery repositories **************
+   ExtensionRepository : Implicit
+   UseExperimentalFeatureForNugetShare : true
+   AllowNugetExeUpdate : true
+   NonInteractiveNuget : true
+   AllowNugetMSCredentialProviderInstall : true
+   AllowParallelInitializationOfLocalRepositories : true
+
+   -- Configuring repositories
+      ----> Repository : LocalInstalled, Enabled: true
+      ----> Repository : UserExtensions, Enabled: true
+
+>>>>>>>>>>>>> Preparing the environment for Debugger Extensions Gallery repositories completed, duration 0.000 seconds
+
+************* Waiting for Debugger Extensions Gallery to Initialize **************
+
+>>>>>>>>>>>>> Waiting for Debugger Extensions Gallery to Initialize completed, duration 0.453 seconds
+   ----> Repository : UserExtensions, Enabled: true, Packages count: 0
+   ----> Repository : LocalInstalled, Enabled: true, Packages count: 46
+
+Microsoft (R) Windows Debugger Version 10.0.29661.1004 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+
+Loading Dump File [C:\Users\Hayk7\AppData\Local\Temp\Basically Games\Baldi's Basics Classic\Crashes\Crash_2026-11-02_195934646\crash.dmp]
+User Mini Dump File: Only registers, stack and portions of memory are available
+
+Symbol search path is: srv*
+Executable search path is: 
+Windows 10 Version 26300 MP (8 procs) Free x64
+Product: WinNt, suite: SingleUserTS Personal
+Edition build lab: 26100.1.amd64fre.ge_release.240331-1435
+Debug session time: Mon Nov  2 22:59:34.000 2026 (UTC + 3:00)
+System Uptime: 4 days 3:45:42.967
+Process Uptime: 0 days 0:00:18.000
+................................................................
+..................
+This dump file has an exception of interest stored in it.
+The stored exception information can be accessed via .ecxr
+(5040.52d8): Access violation - code c0000005 (first/second chance not available)
+
++------------------------------------------------------------------------+
+| This target supports Hardware-enforced Stack Protection. A HW based    |
+| "Shadow Stack" may be available to assist in debugging and analysis.   |
+| See aka.ms/userhsp for more info.                                      |
+|                                                                        |
+| dps @ssp                                                               |
+|                                                                        |
++------------------------------------------------------------------------+
+
+For analysis of this file, run !analyze -v
+ntdll!NtWaitForMultipleObjects+0x14:
+00007ff8`828b6f34 c3              ret
+0:000> !analyze -v
+................................................................
+..................
+*******************************************************************************
+*                                                                             *
+*                        Exception Analysis                                   *
+*                                                                             *
+*******************************************************************************
+
+
+KEY_VALUES_STRING: 1
+
+    Key  : AV.Type
+    Value: Read
+
+    Key  : Analysis.CPU.mSec
+    Value: 734
+
+    Key  : Analysis.Elapsed.mSec
+    Value: 6733
+
+    Key  : Analysis.IO.Other.Mb
+    Value: 22
+
+    Key  : Analysis.IO.Read.Mb
+    Value: 1
+
+    Key  : Analysis.IO.Write.Mb
+    Value: 38
+
+    Key  : Analysis.Init.CPU.mSec
+    Value: 640
+
+    Key  : Analysis.Init.Elapsed.mSec
+    Value: 23976
+
+    Key  : Analysis.Memory.CommitPeak.Mb
+    Value: 114
+
+    Key  : Analysis.Version.DbgEng
+    Value: 10.0.29661.1004
+
+    Key  : Analysis.Version.Description
+    Value: 10.2608.26.1 amd64fre
+
+    Key  : Analysis.Version.Ext
+    Value: 1.2608.26.1
+
+    Key  : Failure.Bucket
+    Value: INVALID_POINTER_READ_c0000005_UnityPlayer.dll!Unknown
+
+    Key  : Failure.Exception.Code
+    Value: 0xc0000005
+
+    Key  : Failure.Exception.IP.Address
+    Value: 0x7fff91b57d6b
+
+    Key  : Failure.Exception.IP.Module
+    Value: UnityPlayer
+
+    Key  : Failure.Exception.IP.Offset
+    Value: 0x957d6b
+
+    Key  : Failure.Hash
+    Value: {84a06097-f6a5-2770-27f8-ab1cb4c7a979}
+
+    Key  : Failure.ProblemClass.Primary
+    Value: INVALID_POINTER_READ
+
+    Key  : Faulting.IP.Type
+    Value: Paged
+
+    Key  : Timeline.OS.Boot.DeltaSec
+    Value: 359142
+
+    Key  : Timeline.Process.Start.DeltaSec
+    Value: 18
+
+    Key  : WER.OS.Branch
+    Value: ge_release
+
+    Key  : WER.OS.Version
+    Value: 10.0.26100.1
+
+    Key  : WER.Process.Version
+    Value: 2018.2.21.8949
+
+
+FILE_IN_CAB:  crash.dmp
+
+CONTEXT:  (.ecxr)
+rax=00007fff923ec0d8 rbx=00007fff92387004 rcx=000001f293b90d30
+rdx=0000000000000001 rsi=0000000000000000 rdi=000001f2936e1e10
+rip=00007fff91b57d6b rsp=00000046fcafee00 rbp=00000046fcafef00
+ r8=0000000000000001  r9=00007fff9247bd58 r10=00007fff9247ba58
+r11=00007fff91b704e0 r12=000001f293b90d30 r13=000001f2ffa34d48
+r14=000001f2a4d3b6e0 r15=0000000000000000
+iopl=0         nv up ei pl nz na po nc
+cs=0033  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010202
+UnityPlayer+0x957d6b:
+00007fff`91b57d6b ff90a8000000    call    qword ptr [rax+0A8h] ds:00007fff`923ec180=646f4d6469446e4f
+Resetting default scope
+
+EXCEPTION_RECORD:  (.exr -1)
+ExceptionAddress: 00007fff91b57d6b (UnityPlayer+0x0000000000957d6b)
+   ExceptionCode: c0000005 (Access violation)
+  ExceptionFlags: 00000000
+NumberParameters: 2
+   Parameter[0]: 0000000000000000
+   Parameter[1]: ffffffffffffffff
+Attempt to read from address ffffffffffffffff
+
+PROCESS_NAME:  BALDI.exe
+
+READ_ADDRESS:  ffffffffffffffff 
+
+ERROR_CODE: (NTSTATUS) 0xc0000005 -                      0x%p                               0x%p.                      %s.
+
+EXCEPTION_CODE: (NTSTATUS) 0xc0000005 -                      0x%p                               0x%p.                      %s.
+
+EXCEPTION_CODE_STR:  c0000005
+
+EXCEPTION_PARAMETER1:  0000000000000000
+
+EXCEPTION_PARAMETER2:  ffffffffffffffff
+
+IP_ON_HEAP:  000001f291872a03
+The fault address in not in any loaded module, please check your build's rebase
+log at <releasedir>\bin\build_logs\timebuild\ntrebase.log for module which may
+contain the address if it were loaded.
+
+FRAME_ONE_INVALID: 1
+
+STACK_TEXT:  
+00000046`fcafee00 000001f2`91872a03     : 000001f2`908d4220 000001f2`936d5a98 000001f2`936e1e10 000001f2`936d5a98 : UnityPlayer+0x957d6b
+00000046`fcafef50 000001f2`908d4220     : 000001f2`936d5a98 000001f2`936e1e10 000001f2`936d5a98 000001f2`3f800000 : 0x000001f2`91872a03
+00000046`fcafef58 000001f2`936d5a98     : 000001f2`936e1e10 000001f2`936d5a98 000001f2`3f800000 000001f2`fb5e14a0 : 0x000001f2`908d4220
+00000046`fcafef60 000001f2`936e1e10     : 000001f2`936d5a98 000001f2`3f800000 000001f2`fb5e14a0 000001f2`fb5e12b0 : 0x000001f2`936d5a98
+00000046`fcafef68 000001f2`936d5a98     : 000001f2`3f800000 000001f2`fb5e14a0 000001f2`fb5e12b0 000001f2`ffa34d48 : 0x000001f2`936e1e10
+00000046`fcafef70 000001f2`3f800000     : 000001f2`fb5e14a0 000001f2`fb5e12b0 000001f2`ffa34d48 000001f2`936e1e10 : 0x000001f2`936d5a98
+00000046`fcafef78 000001f2`fb5e14a0     : 000001f2`fb5e12b0 000001f2`ffa34d48 000001f2`936e1e10 000001f2`908d4220 : 0x000001f2`3f800000
+00000046`fcafef80 000001f2`fb5e12b0     : 000001f2`ffa34d48 000001f2`936e1e10 000001f2`908d4220 00000046`fcafefe0 : 0x000001f2`fb5e14a0
+00000046`fcafef88 000001f2`ffa34d48     : 000001f2`936e1e10 000001f2`908d4220 00000046`fcafefe0 00000046`fcafef50 : 0x000001f2`fb5e12b0
+00000046`fcafef90 000001f2`936e1e10     : 000001f2`908d4220 00000046`fcafefe0 00000046`fcafef50 00000046`fcaff540 : 0x000001f2`ffa34d48
+00000046`fcafef98 000001f2`908d4220     : 00000046`fcafefe0 00000046`fcafef50 00000046`fcaff540 000001f2`ffa34d48 : 0x000001f2`936e1e10
+00000046`fcafefa0 00000046`fcafefe0     : 00000046`fcafef50 00000046`fcaff540 000001f2`ffa34d48 00000046`fcaff460 : 0x000001f2`908d4220
+00000046`fcafefa8 00000046`fcafef50     : 00000046`fcaff540 000001f2`ffa34d48 00000046`fcaff460 00000000`00000000 : 0x00000046`fcafefe0
+00000046`fcafefb0 00000046`fcaff540     : 000001f2`ffa34d48 00000046`fcaff460 00000000`00000000 000001f2`936e1e10 : 0x00000046`fcafef50
+00000046`fcafefb8 000001f2`ffa34d48     : 00000046`fcaff460 00000000`00000000 000001f2`936e1e10 000001f2`936d5a98 : 0x00000046`fcaff540
+00000046`fcafefc0 00000046`fcaff460     : 00000000`00000000 000001f2`936e1e10 000001f2`936d5a98 00000046`fcaff030 : 0x000001f2`ffa34d48
+00000046`fcafefc8 00000000`00000000     : 000001f2`936e1e10 000001f2`936d5a98 00000046`fcaff030 000001f2`91872935 : 0x00000046`fcaff460
+
+
+STACK_COMMAND: ~0s; .ecxr ; kb
+
+IP_IN_PAGED_CODE: 
+UnityPlayer+957d6b
+00007fff`91b57d6b ff90a8000000    call    qword ptr [rax+0A8h]
+
+SYMBOL_NAME:  UnityPlayer+957d6b
+
+MODULE_NAME: UnityPlayer
+
+IMAGE_NAME:  UnityPlayer.dll
+
+FAILURE_BUCKET_ID:  INVALID_POINTER_READ_c0000005_UnityPlayer.dll!Unknown
+
+OS_VERSION:  10.0.26100.1
+
+BUILDLAB_STR:  ge_release
+
+OSPLATFORM_TYPE:  x64
+
+OSNAME:  Windows 10
+
+IMAGE_VERSION:  2018.2.21.8949
+
+FAILURE_ID_HASH:  {84a06097-f6a5-2770-27f8-ab1cb4c7a979}
+
+Followup:     MachineOwner
+---------
+
