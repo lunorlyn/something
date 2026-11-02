@@ -1,0 +1,1091 @@
+Baldi's Basics Classic by Basically Games [version: Unity 2018.2.21f1_a122f5dc316d]
+
+UnityPlayer.dll caused an Access Violation (0xc0000005)
+  in module UnityPlayer.dll at 0033:91b57d6b.
+
+Error occurred at 2026-11-02_225936.
+C:\Users\Hayk7\OneDrive\Desktop\aaffafafafafaf\BALDI_1.4.3_endless_sweep_no_think_pad\BALDI.exe, run by Hayk7.
+
+84% physical memory in use.
+7988 MB physical memory [1207 MB free].
+518 MB process peak paging file [489 MB used].
+467 MB process peak working set [449 MB used].
+System Commit Total/Limit/Peak: 13474MB/14096MB/15258MB
+System Physical Total/Available: 7988MB/1207MB
+System Process Count: 289
+System Thread Count: 4062
+System Handle Count: 163084
+Disk space data for 'C:\Users\Hayk7\AppData\Local\Temp\Basically Games\Baldi's Basics Classic\Crashes\Crash_2026-11-02_195934646\': 3086983168 bytes free of 510609321984 total.
+
+Read from location FFFFFFFFFFFFFFFF caused an access violation.
+
+Context:
+RDI:    0x000001f2936e1e10  RSI: 0x0000000000000000  RAX:   0x00007fff923ec0d8
+RBX:    0x00007fff92387004  RCX: 0x000001f293b90d30  RDX:   0x0000000000000001
+RIP:    0x00007fff91b57d6b  RBP: 0x00000046fcafef00  SegCs: 0x0000000000000033
+EFlags: 0x0000000000010202  RSP: 0x00000046fcafee00  SegSs: 0x000000000000002b
+R8:     0x0000000000000001  R9:  0x00007fff9247bd58  R10:   0x00007fff9247ba58
+R11:    0x00007fff91b704e0  R12: 0x000001f293b90d30  R13:   0x000001f2ffa34d48
+R14:    0x000001f2a4d3b6e0  R15: 0x0000000000000000
+
+
+Bytes at CS:EIP:
+ff 90 a8 00 00 00 85 c0 75 08 49 8b cc e8 e3 f6 
+
+*** WARNING ***
+Managed call stack frames will be incorrect or missing.
+The Mono DLL at 'C:\Users\Hayk7\OneDrive\Desktop\aaffafafafafaf\BALDI_1.4.3_endless_sweep_no_think_pad\Mono\EmbedRuntime\mono.dll' does not provide out-of-process stack information support.
+Upgrade to a newer version of the Mono Scripting Runtime for more detailed debug information.
+
+
+Stack Trace of Crashed Thread 21208:
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF91B57D6B)
+0x00007FFF91B57D6B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F291872A03)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F291872A03)
+0x000001F291872A03 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2908D4220)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2908D4220)
+0x000001F2908D4220 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2936D5A98)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2936D5A98)
+0x000001F2936D5A98 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2936E1E10)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2936E1E10)
+0x000001F2936E1E10 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2936D5A98)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2936D5A98)
+0x000001F2936D5A98 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F23F800000)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F23F800000)
+0x000001F23F800000 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2FB5E14A0)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2FB5E14A0)
+0x000001F2FB5E14A0 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2FB5E12B0)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2FB5E12B0)
+0x000001F2FB5E12B0 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2FFA34D48)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2FFA34D48)
+0x000001F2FFA34D48 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2936E1E10)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2936E1E10)
+0x000001F2936E1E10 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2908D4220)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2908D4220)
+0x000001F2908D4220 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 00000046FCAFEFE0)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 00000046FCAFEFE0)
+0x00000046FCAFEFE0 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 00000046FCAFEF50)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 00000046FCAFEF50)
+0x00000046FCAFEF50 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 00000046FCAFF540)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 00000046FCAFF540)
+0x00000046FCAFF540 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2FFA34D48)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2FFA34D48)
+0x000001F2FFA34D48 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 00000046FCAFF460)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 00000046FCAFF460)
+0x00000046FCAFF460 ((<unknown>)) (function-name not available)
+
+Stacks for Running Threads:
+
+Call Stack for Thread 4292:
+0x00007FF8828BA0B4 (ntdll) NtWaitForWorkViaWorkerFactory
+0x00007FF882774D0E (ntdll) TpCallbackMayRunLong
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 26160:
+0x00007FF8828BA0B4 (ntdll) NtWaitForWorkViaWorkerFactory
+0x00007FF882774D0E (ntdll) TpCallbackMayRunLong
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 18564:
+0x00007FF8828BA0B4 (ntdll) NtWaitForWorkViaWorkerFactory
+0x00007FF882774D0E (ntdll) TpCallbackMayRunLong
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 17960:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+0x00007FFFCA41FFD6 (mono) mono_poll
+0x00007FFFCA44880E (mono) mono_gc_is_finalizer_thread
+0x00007FFFCA4B4097 (mono) mono_thread_interruption_request_flag
+0x00007FFFCA56A163 (mono) mono_unity_install_unitytls_interface
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 3692:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 12524:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 10208:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 6212:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 19204:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 2192:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 25704:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 22516:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 6464:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 8608:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 22568:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 3784:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 18076:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 10520:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 24460:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 10676:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 8140:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 24920:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 12176:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 23876:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 20336:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 2936:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 9816:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169B97D)
+0x00007FFF9169B97D (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9169C81B)
+0x00007FFF9169C81B (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 9920:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917443F0)
+0x00007FFF917443F0 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF916C22BC)
+0x00007FFF916C22BC (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 14972:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF915A2776)
+0x00007FFF915A2776 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF915A2669)
+0x00007FFF915A2669 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 17852:
+0x00007FF8828BA054 (ntdll) ZwWaitForAlertByThreadId
+0x00007FF8827B18EE (ntdll) RtlSleepConditionVariableSRW
+0x00007FF87F95AE38 (KERNELBASE) SleepConditionVariableSRW
+0x00007FF872A35D25 (igd10iumd64) OpenAdapter10_2
+0x00007FF872A35E43 (igd10iumd64) OpenAdapter10_2
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF872823566)
+0x00007FF872823566 (igd10iumd64) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF87282349C)
+0x00007FF87282349C (igd10iumd64) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF8728233F9)
+0x00007FF8728233F9 (igd10iumd64) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF872823099)
+0x00007FF872823099 (igd10iumd64) (function-name not available)
+0x00007FF872A22246 (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 7672:
+0x00007FF8828BA054 (ntdll) ZwWaitForAlertByThreadId
+0x00007FF8827B18EE (ntdll) RtlSleepConditionVariableSRW
+0x00007FF87F95AE38 (KERNELBASE) SleepConditionVariableSRW
+0x00007FF872A35D25 (igd10iumd64) OpenAdapter10_2
+0x00007FF872A35E43 (igd10iumd64) OpenAdapter10_2
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF872823566)
+0x00007FF872823566 (igd10iumd64) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF87282349C)
+0x00007FF87282349C (igd10iumd64) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF8728233F9)
+0x00007FF8728233F9 (igd10iumd64) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF872823379)
+0x00007FF872823379 (igd10iumd64) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FF872823205)
+0x00007FF872823205 (igd10iumd64) (function-name not available)
+0x00007FF872A22246 (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 9484:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF881D22AAE (combase) InternalIrotGetObject3
+0x00007FF881E250FB (combase) CLSIDFromString
+0x00007FF881E24E9F (combase) CLSIDFromString
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 2656:
+0x00007FF8828BA0B4 (ntdll) NtWaitForWorkViaWorkerFactory
+0x00007FF882774D0E (ntdll) TpCallbackMayRunLong
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 10696:
+0x00007FF8828BA0B4 (ntdll) NtWaitForWorkViaWorkerFactory
+0x00007FF882774D0E (ntdll) TpCallbackMayRunLong
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 8716:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917443F0)
+0x00007FFF917443F0 (UnityPlayer) (function-name not available)
+0x00007FFF91DCA87C (UnityPlayer) UnityMain
+0x00007FFF91DD368B (UnityPlayer) UnityMain
+0x00007FFF91DD37A7 (UnityPlayer) UnityMain
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 13140:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+0x00007FFF922333DA (UnityPlayer) UnityMain
+0x00007FFF9223332E (UnityPlayer) UnityMain
+0x00007FFF921C1171 (UnityPlayer) UnityMain
+0x00007FFF92341DB1 (UnityPlayer) UnityMain
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 17612:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+0x00007FFF92215925 (UnityPlayer) UnityMain
+0x00007FFF921BF47A (UnityPlayer) UnityMain
+0x00007FFF921C1151 (UnityPlayer) UnityMain
+0x00007FFF92341DB1 (UnityPlayer) UnityMain
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 19440:
+0x00007FF8828B6A64 (ntdll) ZwDelayExecution
+0x00007FF882823194 (ntdll) RtlDelayExecution
+0x00007FF87F9CCCA1 (KERNELBASE) SleepEx
+0x00007FFF921BF62A (UnityPlayer) UnityMain
+0x00007FFF921C118A (UnityPlayer) UnityMain
+0x00007FFF92341DB1 (UnityPlayer) UnityMain
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 11676:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF87F95AA21 (KERNELBASE) WaitForMultipleObjects
+0x00007FF8729A64CE (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 11552:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF87F95AA21 (KERNELBASE) WaitForMultipleObjects
+0x00007FF8729A64CE (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 7220:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF87F95AA21 (KERNELBASE) WaitForMultipleObjects
+0x00007FF8729A64CE (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 1040:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF87F95AA21 (KERNELBASE) WaitForMultipleObjects
+0x00007FF8729A64CE (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 7964:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF87F95AA21 (KERNELBASE) WaitForMultipleObjects
+0x00007FF8729A64CE (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 18928:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF87F95AA21 (KERNELBASE) WaitForMultipleObjects
+0x00007FF8729A64CE (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 23476:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF87F95AA21 (KERNELBASE) WaitForMultipleObjects
+0x00007FF8729A64CE (igd10iumd64) OpenAdapter10_2
+0x00007FF872A69BEA (igd10iumd64) OpenAdapter10_2
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 21196:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF916F8A23)
+0x00007FFF916F8A23 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF916F8B89)
+0x00007FFF916F8B89 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 20428:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FFFCA4B4AE2 (mono) mono_thread_exit
+0x00007FFFCA4B4D46 (mono) mono_thread_exit
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F28006A690)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F28006A690)
+0x000001F28006A690 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F28E5F8F60)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F28E5F8F60)
+0x000001F28E5F8F60 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 0000000000000824)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 0000000000000824)
+0x0000000000000824 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F29013B690)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F29013B690)
+0x000001F29013B690 ((<unknown>)) (function-name not available)
+0x00007FFFCA42183E (mono) mono_digest_get_public_token
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F28E5F8F60)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F28E5F8F60)
+0x000001F28E5F8F60 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 00000046FF9FF500)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 00000046FF9FF500)
+0x00000046FF9FF500 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 00000046FF9FF470)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 00000046FF9FF470)
+0x00000046FF9FF470 ((<unknown>)) (function-name not available)
+
+
+Call Stack for Thread 22344:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FF87B69CAF8 (CoreMessaging) CoreUICreateEx
+0x00007FF87B69C7D3 (CoreMessaging) CoreUICreateEx
+0x00007FF87B69C42E (CoreMessaging) CoreUICreateEx
+0x00007FF87B69B47C (CoreMessaging) CoreUICreateEx
+0x00007FF87B69AA07 (CoreMessaging) CoreUICreateEx
+0x00007FF87B66F734 (CoreMessaging) CoreUICallSend
+0x00007FF87B66F2CD (CoreMessaging) CoreUICallSend
+0x00007FF87B66E8D8 (CoreMessaging) CoreUICallSend
+0x00007FF87B6DB2D6 (CoreMessaging) CoreUICallCreateEndpointHost
+0x00007FF87B6D3CAF (CoreMessaging) CoreUICreate
+0x00007FF87B6AD75B (CoreMessaging) CoreUICreateEx
+0x00007FF84E06BDE9 (inputhost) Ordinal2604
+0x00007FF84E06BD29 (inputhost) Ordinal2604
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 26060:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+0x00007FFF91EFEAE2 (UnityPlayer) UnityMain
+0x00007FFF91EE5A9F (UnityPlayer) UnityMain
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 24676:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9183BAC4)
+0x00007FFF9183BAC4 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 7340:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9183BAC4)
+0x00007FFF9183BAC4 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 3764:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9183BAC4)
+0x00007FFF9183BAC4 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 13308:
+0x00007FF8828B6464 (ntdll) NtWaitForSingleObject
+0x00007FF87F95427F (KERNELBASE) WaitForSingleObjectEx
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF9183BAC4)
+0x00007FFF9183BAC4 (UnityPlayer) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Попытка обращения к неверному адресу.' (Address: 00007FFF917437E8)
+0x00007FFF917437E8 (UnityPlayer) (function-name not available)
+0x00007FF880E2DDA7 (KERNEL32) BaseThreadInitThunk
+0x00007FF882819C5C (ntdll) RtlUserThreadStart
+
+
+Call Stack for Thread 18312:
+0x00007FF8828B6F34 (ntdll) ZwWaitForMultipleObjects
+0x00007FF87F95AB53 (KERNELBASE) WaitForMultipleObjectsEx
+0x00007FFFCA4B4AE2 (mono) mono_thread_exit
+0x00007FFFCA4B4D46 (mono) mono_thread_exit
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F28006A690)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F28006A690)
+0x000001F28006A690 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F28E5F8F60)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F28E5F8F60)
+0x000001F28E5F8F60 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 0000000000000840)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 0000000000000840)
+0x0000000000000840 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 00000046800FF5F0)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 00000046800FF5F0)
+0x00000046800FF5F0 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F28E5F8F60)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F28E5F8F60)
+0x000001F28E5F8F60 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 00000046800FF5C0)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 00000046800FF5C0)
+0x00000046800FF5C0 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F28FF12220)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F28FF12220)
+0x000001F28FF12220 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F28DD6BF10)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F28DD6BF10)
+0x000001F28DD6BF10 ((<unknown>)) (function-name not available)
+ERROR: SymGetSymFromAddr64, GetLastError: 'Не найден указанный модуль.' (Address: 000001F2FFA34D48)
+ERROR: SymGetModuleInfo64, GetLastError: 'Произошел сбой в программе инициализации библиотеки динамической компоновки (DLL).' (Address: 000001F2FFA34D48)
+0x000001F2FFA34D48 ((<unknown>)) (function-name not available)
+
+
+
+
+Stack Memory [0x00000046FCAFEE00-0x00000046FCB00000]:
+0xfcafee00: 00000000 00000000 00000000 00000000 ................
+0xfcafee10: 92387004 00007fff 00000000 00000000 .p8.............
+0xfcafee20: 00000000 00000000 00000000 00000000 ................
+0xfcafee30: 9094db60 000001f2 8fdaa1c0 000001f2 `...............
+0xfcafee40: 908d4220 000001f2 fcafec40 00000046  B......@...F...
+0xfcafee50: fb5e14a1 000001f2 fb5e12b0 000001f2 ..^.......^.....
+0xfcafee60: 8e0d30b8 000001f2 918728ed 000001f2 .0.......(......
+0xfcafee70: 908d4220 000001f2 fcaff030 00000046  B......0...F...
+0xfcafee80: fcafeff0 00000046 fcaff540 00000046 ....F...@...F...
+0xfcafee90: ffa34d48 000001f2 fcaff460 00000046 HM......`...F...
+0xfcafeea0: 00000000 00000000 936e1e10 000001f2 ..........n.....
+0xfcafeeb0: 936d5a98 000001f2 00000000 3ff00000 .Zm............?
+0xfcafeec0: 00000000 00000000 420c0000 00000000 ...........B....
+0xfcafeed0: 00000000 00000000 3f800000 3ff00000 ...........?...?
+0xfcafeee0: 00000000 00000000 41700000 00000000 ..........pA....
+0xfcafeef0: 00000000 00000000 00000000 00000000 ................
+0xfcafef00: 00000000 00000000 3f800000 00000000 ...........?....
+0xfcafef10: 00000000 00000000 00000000 00000000 ................
+0xfcafef20: 00000000 00000000 ffa34d48 000001f2 ........HM......
+0xfcafef30: fcaff460 00000046 fcaff540 00000046 `...F...@...F...
+0xfcafef40: fcafefe0 00000046 91872a03 000001f2 ....F....*......
+0xfcafef50: 908d4220 000001f2 936d5a98 000001f2  B.......Zm.....
+0xfcafef60: 936e1e10 000001f2 936d5a98 000001f2 ..n......Zm.....
+0xfcafef70: 3f800000 000001f2 fb5e14a0 000001f2 ...?......^.....
+0xfcafef80: fb5e12b0 000001f2 ffa34d48 000001f2 ..^.....HM......
+0xfcafef90: 936e1e10 000001f2 908d4220 000001f2 ..n..... B......
+0xfcafefa0: fcafefe0 00000046 fcafef50 00000046 ....F...P...F...
+0xfcafefb0: fcaff540 00000046 ffa34d48 000001f2 @...F...HM......
+0xfcafefc0: fcaff460 00000046 00000000 00000000 `...F...........
+0xfcafefd0: 936e1e10 000001f2 936d5a98 000001f2 ..n......Zm.....
+0xfcafefe0: fcaff030 00000046 91872935 000001f2 0...F...5)......
+0xfcafeff0: 908d4220 000001f2 fcafedf0 00000046  B..........F...
+0xfcaff000: fcaff0d0 00000046 936646c0 000001f2 ....F....Ff.....
+0xfcaff010: 3f800000 000001f2 00000000 00000000 ...?............
+0xfcaff020: 8e502880 000001f2 936646c0 000001f2 .(P......Ff.....
+0xfcaff030: fcaff080 00000046 918730ff 000001f2 ....F....0......
+0xfcaff040: ffa34d48 000001f2 fcaff460 00000046 HM......`...F...
+0xfcaff050: 00000000 00000000 fd039f90 000001f2 ................
+0xfcaff060: 918730b0 000001f2 936d5a98 000001f2 .0.......Zm.....
+0xfcaff070: 936e1e10 000001f2 918730b0 3f800000 ..n......0.....?
+0xfcaff080: fcaff0d0 00000046 9187aa9b 000001f2 ....F...........
+0xfcaff090: ffa34d48 000001f2 8e5add98 000001f2 HM........Z.....
+0xfcaff0a0: 035169ff 00000000 ca532c9b 00007fff .iQ......,S.....
+0xfcaff0b0: ffa90ca0 000001f2 ca412af8 00007fff .........*A.....
+0xfcaff0c0: 00000157 00000000 80011c20 000001f2 W....... .......
+0xfcaff0d0: fcaff160 00000046 80011c8b 000001f2 `...F...........
+0xfcaff0e0: 00000018 00000000 ca57465f 00007fff ........_FW.....
+0xfcaff0f0: ffa90ca0 000001f2 ca41232d 00007fff ........-#A.....
+0xfcaff100: fcaff1b0 00000046 9187a930 000001f2 ....F...0.......
+0xfcaff110: fcaff540 00000046 ca4121d0 00007fff @...F....!A.....
+0xfcaff120: 936646c0 000001f2 00000000 00000000 .Ff.............
+0xfcaff130: 00000000 00000000 ca41228b 00007fff ........."A.....
+0xfcaff140: ffa90ca0 000001f2 8e502880 000001f2 .........(P.....
+0xfcaff150: 80011c20 000001f2 fcaff1a0 00000046  ...........F...
+0xfcaff160: fcaff1a0 00000046 ca53671b 00007fff ....F....gS.....
+0xfcaff170: 908d4220 000001f2 00000000 00000046  B..........F...
+0xfcaff180: 00000000 00000000 908d4220 000001f2 ........ B......
+0xfcaff190: fd55d140 000001f2 fd55d0d0 000001f2 @.U.......U.....
+0xfcaff1a0: ffa34d48 000001f2 8e50f6d0 000001f2 HM........P.....
+0xfcaff1b0: 00000000 00000000 908d4220 000001f2 ........ B......
+0xfcaff1c0: ffa90ca0 000001f2 936646c0 000001f2 .........Ff.....
+0xfcaff1d0: fcaff540 00000046 fcaff460 00000046 @...F...`...F...
+0xfcaff1e0: 00000000 00000000 00000000 00000000 ................
+0xfcaff1f0: 00000000 00000000 00000000 00000000 ................
+0xfcaff200: 00000000 00000000 00000000 00000000 ................
+0xfcaff210: 00000000 00000000 00000000 00000000 ................
+0xfcaff220: 00000000 00000000 00000000 00000000 ................
+0xfcaff230: 00000000 00000000 00000000 00000000 ................
+0xfcaff240: 00000000 00000000 00000000 00000000 ................
+0xfcaff250: 00000000 00000000 00000000 00000000 ................
+0xfcaff260: 00000000 00000000 00000000 00000000 ................
+0xfcaff270: 00000000 00000000 00000000 00000000 ................
+0xfcaff280: 00000000 00000000 00000000 00000000 ................
+0xfcaff290: 00000000 00000000 00000000 00000000 ................
+0xfcaff2a0: 00000000 00000000 00000000 00000000 ................
+0xfcaff2b0: 00000000 00000000 00000000 00000000 ................
+0xfcaff2c0: 00000000 00000000 00000000 00000000 ................
+0xfcaff2d0: 00000000 00000000 00000000 00000000 ................
+0xfcaff2e0: 63d206ee 00006806 00000000 00000000 ...c.h..........
+0xfcaff2f0: 00000000 00000000 00000003 00000000 ................
+0xfcaff300: 0000000a 00000000 00000001 00000000 ................
+0xfcaff310: 00000000 00000000 fcaff540 00000046 ........@...F...
+0xfcaff320: fcaff460 00000046 8e502880 000001f2 `...F....(P.....
+0xfcaff330: 936646c0 000001f2 ca488a71 00007fff .Ff.....q.H.....
+0xfcaff340: 00000000 00000000 00000000 00000000 ................
+0xfcaff350: 00000000 00000000 00000000 00000000 ................
+0xfcaff360: 8e502880 000001f2 917f3ce4 00007fff .(P......<......
+0xfcaff370: 936646c0 000001f2 fcaff5b0 00000046 .Ff.........F...
+0xfcaff380: fcaff3e0 00000046 00000000 00000000 ....F...........
+0xfcaff390: fcaff400 00000046 917f1260 00007fff ....F...`.......
+0xfcaff3a0: fcaff550 00000046 fcaff540 00000046 P...F...@...F...
+0xfcaff3b0: 8d0d3cc0 000001f2 00000000 00000000 .<..............
+0xfcaff3c0: fcaff540 00000046 00000000 00000000 @...F...........
+0xfcaff3d0: a4d3b590 000001f2 917d58a9 00007fff .........X}.....
+0xfcaff3e0: 8e502880 000001f2 8e502880 000001f2 .(P......(P.....
+0xfcaff3f0: 00000000 00000000 fd55d140 000001f2 ........@.U.....
+0xfcaff400: 00000000 00000000 00000000 00000000 ................
+0xfcaff410: fcaff480 00000046 917f1260 00007fff ....F...`.......
+0xfcaff420: fcaff5c8 00000046 fcaff5c0 00000046 ....F.......F...
+0xfcaff430: 8d0d3ec8 000001f2 00000001 00000000 .>..............
+0xfcaff440: fcaff5c0 00000046 91bb7b00 00007fff ....F....{......
+0xfcaff450: 00000005 00000000 916dd0cc 00007fff ..........m.....
+0xfcaff460: 00000000 00000000 00000000 00000000 ................
+0xfcaff470: 00000000 00000000 00000000 00000000 ................
+0xfcaff480: 00000000 00000000 00000000 00000000 ................
+0xfcaff490: 00000000 00000000 00000000 00000000 ................
+0xfcaff4a0: 00000000 00000000 00000000 00000000 ................
+0xfcaff4b0: 00000000 00000000 00000000 00000000 ................
+0xfcaff4c0: 8d0d4000 000001f2 fcaff559 00000046 .@......Y...F...
+0xfcaff4d0: 00000000 00000000 00000000 00000000 ................
+0xfcaff4e0: 00000000 00000000 00000000 00000000 ................
+0xfcaff4f0: 00000000 00000000 8e502880 000001f2 .........(P.....
+0xfcaff500: 936646c0 000001f2 00000000 00000000 .Ff.............
+0xfcaff510: 0000c9d8 00000000 00000000 00000000 ................
+0xfcaff520: 00000000 00000000 91d80101 00007fff ................
+0xfcaff530: 00000000 00000000 917d5a40 00007fff ........@Z}.....
+0xfcaff540: 00000000 00000000 a4d3b590 000001f2 ................
+0xfcaff550: 00000000 00000000 9169178e 00007fff ..........i.....
+0xfcaff560: fcf389d0 000001f2 915a2ad0 00007fff .........*Z.....
+0xfcaff570: 936646c0 000001f2 fcff6bd0 000001f2 .Ff......k......
+0xfcaff580: 00000000 00000000 916dd0e9 00007fff ..........m.....
+0xfcaff590: fcaff590 00000046 fcaff590 00000046 ....F.......F...
+0xfcaff5a0: fcf32c10 000001f2 a4d3b620 000001f2 .,...... .......
+0xfcaff5b0: 00000000 00000000 916dc887 00007fff ..........m.....
+0xfcaff5c0: 8d0d40d0 000001f2 8d0d4138 000001f2 .@......8A......
+0xfcaff5d0: 00000000 00000000 fd039f90 000001f2 ................
+0xfcaff5e0: 00000001 00000000 00000001 00000000 ................
+0xfcaff5f0: 00000201 00000000 00000000 00000000 ................
+0xfcaff600: 00000000 00000000 91694821 00007fff ........!Hi.....
+0xfcaff610: fcaff6c9 00000046 00000201 00000000 ....F...........
+0xfcaff620: 00000001 00000000 8277f8de 00007ff8 ..........w.....
+0xfcaff630: 00000000 00000000 91d7a6ed 00007fff ................
+0xfcaff640: 001e107c 00000000 822ee587 00007ff8 |...............
+0xfcaff650: fcaff7a0 00000046 00000000 00000000 ....F...........
+0xfcaff660: fcaff8e0 00000046 00000000 00000000 ....F...........
+0xfcaff670: 00000000 00000000 00000000 00000000 ................
+0xfcaff680: fe743470 000001f2 0000000a 00000000 p4t.............
+0xfcaff690: fcaff8e0 00000046 91de45db 00007fff ....F....E......
+0xfcaff6a0: 00000000 00000000 00000000 00000000 ................
+0xfcaff6b0: 00000000 00000000 91694ab8 00007fff .........Ji.....
+0xfcaff6c0: 00000000 00000000 fe743470 000001f2 ........p4t.....
+0xfcaff6d0: 00000000 00000000 0000000a 00000000 ................
+0xfcaff6e0: 00000000 00000000 00000000 00000000 ................
+0xfcaff6f0: 00000000 00000000 00000000 00000000 ................
+0xfcaff700: 229944c4 0000aed4 00000000 00000000 .D."............
+0xfcaff710: 0000003f 00000000 8d0d26d0 000001f2 ?........&......
+0xfcaff720: 00000000 00000000 916dc912 00007fff ..........m.....
+0xfcaff730: 00000000 00000000 00000001 00000000 ................
+0xfcaff740: 00000000 00000000 8d0d40d0 000001f2 .........@......
+0xfcaff750: 00000000 00000000 00000000 00000000 ................
+0xfcaff760: fe743470 000001f2 0000000a 00000000 p4t.............
+0xfcaff770: 00000000 00000000 00000000 00000000 ................
+0xfcaff780: fcaff879 00000046 91deda02 00007fff y...F...........
+0xfcaff790: fe743470 000001f2 fc000000 00000046 p4t.........F...
+0xfcaff7a0: 00000000 00000000 00000000 00000000 ................
+0xfcaff7b0: 00000000 00000000 91dec306 00007fff ................
+0xfcaff7c0: 00000000 00000000 00000001 00000000 ................
+0xfcaff7d0: 00000001 00000000 00000000 00000000 ................
+0xfcaff7e0: fcaff8f8 00000046 828ba424 00007ff8 ....F...$.......
+0xfcaff7f0: fcaff828 00000046 00000050 0000002c (...F...P...,...
+0xfcaff800: 7f911304 00007ff8 fcaff878 00000046 ........x...F...
+0xfcaff810: 00000048 00000000 00000001 00000000 H...............
+0xfcaff820: 00000000 00000000 00000000 00000000 ................
+0xfcaff830: 00000070 00000000 ffffffff ffffffff p...............
+0xfcaff840: ffffffff ffffffff 822950c2 00007ff8 .........P).....
+0xfcaff850: 822954b9 00007ff8 001e107c 00000000 .T).....|.......
+0xfcaff860: 00000000 00000000 00000001 00000000 ................
+0xfcaff870: 91d99320 00007fff 822919df 00007ff8  .........).....
+0xfcaff880: 00000000 00000000 00000600 00000000 ................
+0xfcaff890: fcaffac0 00000046 916de72f 00007fff ....F.../.m.....
+0xfcaff8a0: 00000001 00000000 00000000 00000000 ................
+0xfcaff8b0: 00000003 00000000 000008e8 00000000 ................
+0xfcaff8c0: fe743470 000001f2 000008e8 00000000 p4t.............
+0xfcaff8d0: fcaffac0 00000046 91dec53e 00007fff ....F...>.......
+0xfcaff8e0: 00000384 00000640 00000000 00000000 ....@...........
+0xfcaff8f0: 000003bf 0000021b 4447c000 43e80000 ..........GD...C
+0xfcaff900: 00000000 00000000 91ded582 00007fff ................
+0xfcaff910: 00000600 00000000 91d99215 00007fff ................
+0xfcaff920: 000008e8 00000000 00000001 00000000 ................
+0xfcaff930: 00000003 00000000 0000000a 00000000 ................
+0xfcaff940: 00000000 00000000 91d9835a 00007fff ........Z.......
+0xfcaff950: 000008e8 00000000 fcaffac0 00000046 ............F...
+0xfcaff960: 00000600 00000000 00000000 00000000 ................
+0xfcaff970: 00000001 00000000 00000003 00000000 ................
+0xfcaff980: 001e107c 00000000 00000201 00000000 |...............
+0xfcaff990: 00000001 00000000 01b3031f 00000000 ................
+0xfcaff9a0: 1568152f 000003bf 0000021b 00000000 /.h.............
+0xfcaff9b0: 0000000a 00000000 91d9ab0b 00007fff ................
+0xfcaff9c0: 00000001 00000000 fcaffac0 00000046 ............F...
+0xfcaff9d0: 00000640 00000000 00000000 00000000 @...............
+0xfcaff9e0: 00000000 00000000 00000000 00000000 ................
+0xfcaff9f0: 0000001d 00000000 00000000 00000000 ................
+0xfcaffa00: 00000000 00000000 00000000 00000000 ................
+0xfcaffa10: 6f747561 6974616d 772d6e6f 00006265 automation-web..
+0xfcaffa20: 0000000e 00000000 00000044 00000000 ........D.......
+0xfcaffa30: fcf3a9b0 000001f2 00000019 00000000 ................
+0xfcaffa40: 00676966 00000000 00000016 00000000 fig.............
+0xfcaffa50: 00000044 00000000 00000000 00000000 D...............
+0xfcaffa60: 65646968 646e6957 0000776f 00000000 hideWindow......
+0xfcaffa70: 0000000a 00000000 00000044 00000000 ........D.......
+0xfcaffa80: 00000000 00000000 65726170 5748746e ........parentHW
+0xfcaffa90: 0000444e 00000000 0000000a 00000000 ND..............
+0xfcaffaa0: 00000044 00000000 00000000 00000000 D...............
+0xfcaffab0: fcf2bc70 000001f2 00000060 00000000 p.......`.......
+0xfcaffac0: 00000000 00000000 00000060 00000000 ........`.......
+0xfcaffad0: 00000044 00000000 00000000 00000000 D...............
+0xfcaffae0: 00000068 00000000 fb228ba4 000001f2 h.........".....
+0xfcaffaf0: fb228b84 000001f2 fb228ae6 000001f2 ..".......".....
+0xfcaffb00: 00000000 00000000 00000000 00000000 ................
+0xfcaffb10: 00000000 00000000 00000000 00000000 ................
+0xfcaffb20: 00000000 00000000 91d9acdb 00007fff ................
+0xfcaffb30: 0000000a 00000000 00000000 00000000 ................
+0xfcaffb40: 00000000 00000000 0000000a 00007ff6 ................
+0xfcaffb50: 0000000a 00000000 04461207 00007ff6 ..........F.....
+0xfcaffb60: 00000000 00000000 00000000 00000000 ................
+0xfcaffb70: 00000000 00000000 00000000 00000000 ................
+0xfcaffb80: 00000000 00000000 00000000 00000000 ................
+0xfcaffb90: 00000000 00000000 80e2dda7 00007ff8 ................
+0xfcaffba0: 00000000 00000000 00000000 00000000 ................
+0xfcaffbb0: 00000000 00000000 00000000 00000000 ................
+0xfcaffbc0: 00000000 00000000 82819c5c 00007ff8 ........\.......
+0xfcaffbd0: 00000000 00000000 00000000 00000000 ................
+0xfcaffbe0: fffffb30 000004f0 fffffb30 000004d0 0.......0.......
+0xfcaffbf0: 00000021 00000000 7fa4f8b0 00007ff8 !...............
+0xfcaffc00: fcafd8f0 00000046 fcafd8f0 00000046 ....F.......F...
+0xfcaffc10: 00000000 00000000 00000000 00000000 ................
+0xfcaffc20: 00000000 00000000 00000000 00000000 ................
+0xfcaffc30: 00000000 00000000 00000000 00000000 ................
+0xfcaffc40: 00000000 00000000 00000000 00000000 ................
+0xfcaffc50: 00000000 00000000 00000000 00000000 ................
+0xfcaffc60: 00000000 00000000 00000000 00000000 ................
+0xfcaffc70: 00000000 00000000 00000000 00000000 ................
+0xfcaffc80: 00000000 00000000 00000000 00000000 ................
+0xfcaffc90: 00000000 00000000 00000000 00000000 ................
+0xfcaffca0: 00000000 00000000 00000000 00000000 ................
+0xfcaffcb0: 00000000 00000000 00000000 00000000 ................
+0xfcaffcc0: 00000000 00000000 00000000 00000000 ................
+0xfcaffcd0: 00000000 00000000 00000000 00000000 ................
+0xfcaffce0: 00000000 00000000 00000000 00000000 ................
+0xfcaffcf0: 00000000 00000000 00000000 00000000 ................
+0xfcaffd00: 00000000 00000000 00000000 00000000 ................
+0xfcaffd10: 00000000 00000000 00000000 00000000 ................
+0xfcaffd20: 00000000 00000000 00000000 00000000 ................
+0xfcaffd30: 00000000 00000000 00000000 00000000 ................
+0xfcaffd40: 00000000 00000000 00000000 00000000 ................
+0xfcaffd50: 00000000 00000000 00000000 00000000 ................
+0xfcaffd60: 00000000 00000000 00000000 00000000 ................
+0xfcaffd70: 00000000 00000000 00000000 00000000 ................
+0xfcaffd80: 00000000 00000000 00000000 00000000 ................
+0xfcaffd90: 00000000 00000000 00000000 00000000 ................
+0xfcaffda0: 00000000 00000000 00000000 00000000 ................
+0xfcaffdb0: 00000000 00000000 00000000 00000000 ................
+0xfcaffdc0: 00000000 00000000 00000000 00000000 ................
+0xfcaffdd0: 00000000 00000000 00000000 00000000 ................
+0xfcaffde0: 00000000 00000000 00000000 00000000 ................
+0xfcaffdf0: 00000000 00000000 00000000 00000000 ................
+0xfcaffe00: 00000000 00000000 00000000 00000000 ................
+0xfcaffe10: 00000000 00000000 00000000 00000000 ................
+0xfcaffe20: 00000000 00000000 00000000 00000000 ................
+0xfcaffe30: 00000000 00000000 00000000 00000000 ................
+0xfcaffe40: 00000000 00000000 00000000 00000000 ................
+0xfcaffe50: 00000000 00000000 00000000 00000000 ................
+0xfcaffe60: 00000000 00000000 00000000 00000000 ................
+0xfcaffe70: 00000000 00000000 00000000 00000000 ................
+0xfcaffe80: 00000000 00000000 00000000 00000000 ................
+0xfcaffe90: 00000000 00000000 00000000 00000000 ................
+0xfcaffea0: 00000000 00000000 00000000 00000000 ................
+0xfcaffeb0: 00000000 00000000 00000000 00000000 ................
+0xfcaffec0: 00000000 00000000 00000000 00000000 ................
+0xfcaffed0: 00000000 00000000 00000000 00000000 ................
+0xfcaffee0: 00000000 00000000 00000000 00000000 ................
+0xfcaffef0: 00000000 00000000 00000000 00000000 ................
+0xfcafff00: 00000000 00000000 00000000 00000000 ................
+0xfcafff10: 00000000 00000000 00000000 00000000 ................
+0xfcafff20: 00000000 00000000 00000000 00000000 ................
+0xfcafff30: 00000000 00000000 00000000 00000000 ................
+0xfcafff40: 00000000 00000000 00000000 00000000 ................
+0xfcafff50: 00000000 00000000 00000000 00000000 ................
+0xfcafff60: 00000000 00000000 00000000 00000000 ................
+0xfcafff70: 00000000 00000000 00000000 00000000 ................
+0xfcafff80: 00000000 00000000 00000000 00000000 ................
+0xfcafff90: 00000000 00000000 00000000 00000000 ................
+0xfcafffa0: 00000000 00000000 00000000 00000000 ................
+0xfcafffb0: 00000000 00000000 00000000 00000000 ................
+0xfcafffc0: 00000000 00000000 00000000 00000000 ................
+0xfcafffd0: 00000000 00000000 00000000 00000000 ................
+0xfcafffe0: 00000000 00000000 00000000 00000000 ................
+0xfcaffff0: 00000000 00000000 00000000 00000000 ................
+
+Crash Report configuration:
+ * App Name: Baldi's Basics Classic
+ * App Version: Unity 2018.2.21f1_a122f5dc316d
+ * Mono DLL: C:\Users\Hayk7\OneDrive\Desktop\aaffafafafafaf\BALDI_1.4.3_endless_sweep_no_think_pad\Mono\EmbedRuntime\mono.dll
+ * Bug Reporter App Path: 
+ * Crash Report Path: C:\Users\Hayk7\AppData\Local\Temp\Basically Games\Baldi's Basics Classic\Crashes
+ * Is Editor: false
+
+Crash Report metadata:
+
+Additional report files:
+ * MISSING: "C:\Users\Hayk7\OneDrive\Desktop\baldilog\Baldi-log.txt" (Output log file)
+
+
+
+== [end of error.log] ==
