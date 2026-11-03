@@ -1,0 +1,359 @@
+Mono path[0] = 'C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Managed'
+Mono config path = 'C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/Mono/etc'
+Initialize engine version: 2018.2.21f1 (a122f5dc316d)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   
+    VRAM:     2124 MB
+    Driver:   30.0.100.9864
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.078 seconds
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.654000 ms
+Searching for compatible XInput library...
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_3.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\xinput1_3.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_3.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_3
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\xinput1_3
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_3
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/libxinput1_3.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\libxinput1_3.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/libxinput1_3.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_2.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\xinput1_2.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_2.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_2
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\xinput1_2
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_2
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/libxinput1_2.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\libxinput1_2.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/libxinput1_2.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_1.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\xinput1_1.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_1.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_1
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\xinput1_1
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/xinput1_1
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/libxinput1_1.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/.\libxinput1_1.dll
+Fallback handler could not load library C:/Users/Hayk7/OneDrive/Desktop/baldi/BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad/BALDI_Data/Mono/libxinput1_1.dll
+Found Xinput1_4.dll.
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2964 -> priority: 1 
+  Thread -> id: 190 -> priority: 1 
+  Thread -> id: bd8 -> priority: 1 
+  Thread -> id: 5280 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.552900 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2456.
+Total: 10.408600 ms (FindLiveObjects: 0.594200 ms CreateObjectMapping: 0.048900 ms MarkObjects: 9.727900 ms  DeleteObjects: 0.037100 ms)
+
+WARNING: Shader Unsupported: 'LightweightPipeline/Standard (Physically Based)' - Pass 'Meta' has no vertex shader
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+WARNING: Shader Unsupported: 'Standard' - Pass 'META' has no vertex shader
+WARNING: Shader Unsupported: 'Standard' - Pass 'META' has no vertex shader
+UnloadTime: 2.708200 ms
+
+Unloading 707 unused Assets to reduce memory usage. Loaded Objects now: 23645.
+Total: 17.234600 ms (FindLiveObjects: 1.870700 ms CreateObjectMapping: 0.584600 ms MarkObjects: 14.344900 ms  DeleteObjects: 0.433900 ms)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+The following assembly referenced from C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll could not be loaded:
+     Assembly:   System.Private.CoreLib    (assemblyref_index=15)
+     Version:    5.0.0.0
+     Public Key: 7cec85d7bea7798e
+The assembly was not found in the Global Assembly Cache, a path listed in the MONO_PATH environment variable, or in the location of the executing assembly (C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\).
+
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLibFileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type SysteFileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+FileNotFoundException: Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+
+ 
+(Filename:  Line: -1)
+
+m.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
+Could not load file or assembly 'System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' or one of its dependencies.
+Missing method Concat in assembly C:\Users\Hayk7\OneDrive\Desktop\baldi\BALDI_1.4.3_Windows_64Bit_patched_endless_sweep_no_think_pad\BALDI_Data\Managed\Assembly-CSharp.dll, type System.String
