@@ -1,0 +1,428 @@
+using System;
+using System.Collections;
+using Rewired;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+// Token: 0x020000DF RID: 223
+public class MathGameScript : MonoBehaviour
+{
+	// Token: 0x060009F3 RID: 2547 RVA: 0x00022CE8 File Offset: 0x00020EE8
+	private void Start()
+	{
+		this.gc.ActivateLearningGame();
+		if (this.gc.notebooks == 1)
+		{
+			this.QueueAudio(this.bal_intro);
+			this.QueueAudio(this.bal_howto);
+		}
+		this.NewProblem();
+		if (this.gc.spoopMode)
+		{
+			this.baldiFeedTransform.position = new Vector3(-1000f, -1000f, 0f);
+		}
+		if (ReInput.controllers.GetLastActiveControllerType() == ControllerType.Joystick)
+		{
+			this.joystickEnabled = true;
+		}
+	}
+
+	// Token: 0x060009F4 RID: 2548 RVA: 0x00022D78 File Offset: 0x00020F78
+	private void Update()
+	{
+		if (!this.baldiAudio.isPlaying)
+		{
+			if ((this.audioInQueue > 0) & !this.gc.spoopMode)
+			{
+				this.PlayQueue();
+			}
+			this.baldiFeed.SetBool("talking", false);
+		}
+		else
+		{
+			this.baldiFeed.SetBool("talking", true);
+		}
+		if ((Input.GetKeyDown("return") || Input.GetKeyDown("enter")) & this.questionInProgress)
+		{
+			this.questionInProgress = false;
+			this.CheckAnswer();
+		}
+		if (this.problem > 3)
+		{
+			this.endDelay -= 1f * Time.unscaledDeltaTime;
+			if (this.endDelay <= 0f)
+			{
+				GC.Collect();
+				this.ExitGame();
+			}
+		}
+	}
+
+	// Token: 0x060009F5 RID: 2549 RVA: 0x00022E58 File Offset: 0x00021058
+	private void NewProblem()
+	{
+		this.playerAnswer.text = string.Empty;
+		this.problem++;
+		this.playerAnswer.ActivateInputField();
+		if (this.problem <= 3)
+		{
+			this.QueueAudio(this.bal_problems[this.problem - 1]);
+			if (((this.gc.mode == "story") & (this.problem <= 2 || this.gc.notebooks <= 1)) || ((this.gc.mode == "endless") & (this.problem <= 2 || this.gc.notebooks != 2)))
+			{
+				this.num1 = (float)Mathf.RoundToInt(global::UnityEngine.Random.Range(0f, 9f));
+				this.num2 = (float)Mathf.RoundToInt(global::UnityEngine.Random.Range(0f, 9f));
+				this.sign = Mathf.RoundToInt(global::UnityEngine.Random.Range(0f, 1f));
+				this.QueueAudio(this.bal_numbers[Mathf.RoundToInt(this.num1)]);
+				if (this.sign == 0)
+				{
+					this.solution = this.num1 + this.num2;
+					this.questionText.text = string.Concat(new object[] { "SOLVE MATH Q", this.problem, ": \n \n", this.num1, "+", this.num2, "=" });
+					this.QueueAudio(this.bal_plus);
+				}
+				else if (this.sign == 1)
+				{
+					this.solution = this.num1 - this.num2;
+					this.questionText.text = string.Concat(new object[] { "SOLVE MATH Q", this.problem, ": \n \n", this.num1, "-", this.num2, "=" });
+					this.QueueAudio(this.bal_minus);
+				}
+				this.QueueAudio(this.bal_numbers[Mathf.RoundToInt(this.num2)]);
+				this.QueueAudio(this.bal_equals);
+			}
+			else
+			{
+				this.impossibleMode = true;
+				this.num1 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.num2 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.num3 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.sign = Mathf.RoundToInt((float)global::UnityEngine.Random.Range(0, 1));
+				this.QueueAudio(this.bal_screech);
+				if (this.sign == 0)
+				{
+					this.questionText.text = string.Concat(new object[] { "SOLVE MATH Q", this.problem, ": \n", this.num1, "+(", this.num2, "X", this.num3, "=" });
+					this.QueueAudio(this.bal_plus);
+					this.QueueAudio(this.bal_screech);
+					this.QueueAudio(this.bal_times);
+					this.QueueAudio(this.bal_screech);
+				}
+				else if (this.sign == 1)
+				{
+					this.questionText.text = string.Concat(new object[] { "SOLVE MATH Q", this.problem, ": \n (", this.num1, "/", this.num2, ")+", this.num3, "=" });
+					this.QueueAudio(this.bal_divided);
+					this.QueueAudio(this.bal_screech);
+					this.QueueAudio(this.bal_plus);
+					this.QueueAudio(this.bal_screech);
+				}
+				this.num1 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.num2 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.num3 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.sign = Mathf.RoundToInt((float)global::UnityEngine.Random.Range(0, 1));
+				if (this.sign == 0)
+				{
+					this.questionText2.text = string.Concat(new object[] { "SOLVE MATH Q", this.problem, ": \n", this.num1, "+(", this.num2, "X", this.num3, "=" });
+				}
+				else if (this.sign == 1)
+				{
+					this.questionText2.text = string.Concat(new object[] { "SOLVE MATH Q", this.problem, ": \n (", this.num1, "/", this.num2, ")+", this.num3, "=" });
+				}
+				this.num1 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.num2 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.num3 = global::UnityEngine.Random.Range(1f, 9999f);
+				this.sign = Mathf.RoundToInt((float)global::UnityEngine.Random.Range(0, 1));
+				if (this.sign == 0)
+				{
+					this.questionText3.text = string.Concat(new object[] { "SOLVE MATH Q", this.problem, ": \n", this.num1, "+(", this.num2, "X", this.num3, "=" });
+				}
+				else if (this.sign == 1)
+				{
+					this.questionText3.text = string.Concat(new object[] { "SOLVE MATH Q", this.problem, ": \n (", this.num1, "/", this.num2, ")+", this.num3, "=" });
+				}
+				this.QueueAudio(this.bal_equals);
+			}
+			this.questionInProgress = true;
+		}
+		else
+		{
+			this.endDelay = 5f;
+			if (!this.gc.spoopMode)
+			{
+				this.questionText.text = "WOW! YOU EXIST!";
+			}
+			else if ((this.gc.mode == "endless") & (this.problemsWrong <= 0))
+			{
+				int num = Mathf.RoundToInt(global::UnityEngine.Random.Range(0f, 1f));
+				this.questionText.text = this.endlessHintText[num];
+			}
+			else if ((this.gc.mode == "story") & (this.problemsWrong >= 3))
+			{
+				this.questionText.text = "I HEAR MATH THAT BAD";
+				this.questionText2.text = string.Empty;
+				this.questionText3.text = string.Empty;
+				this.baldiScript.Hear(this.playerPosition, 7f);
+				this.gc.failedNotebooks++;
+			}
+			else
+			{
+				int num2 = Mathf.RoundToInt(global::UnityEngine.Random.Range(0f, 1f));
+				this.questionText.text = this.hintText[num2];
+				this.questionText2.text = string.Empty;
+				this.questionText3.text = string.Empty;
+			}
+		}
+	}
+
+	// Token: 0x060009F6 RID: 2550 RVA: 0x00008000 File Offset: 0x00006200
+	public void OKButton()
+	{
+		this.CheckAnswer();
+	}
+
+	// Token: 0x060009F7 RID: 2551 RVA: 0x000236C0 File Offset: 0x000218C0
+	public void CheckAnswer()
+	{
+		if (this.playerAnswer.text == "31718")
+		{
+			base.StartCoroutine(this.CheatText("THIS IS WHERE IT ALL BEGAN"));
+			SceneManager.LoadSceneAsync("TestRoom");
+		}
+		else if (this.playerAnswer.text == "53045009")
+		{
+			base.StartCoroutine(this.CheatText("USE THESE TO STICK TO THE CEILING!"));
+			this.gc.Fliparoo();
+		}
+		if (this.problem <= 3)
+		{
+			if ((this.playerAnswer.text == this.solution.ToString()) & !this.impossibleMode)
+			{
+				this.results[this.problem - 1].texture = this.correct;
+				this.baldiAudio.Stop();
+				this.ClearAudioQueue();
+				int num = Mathf.RoundToInt(global::UnityEngine.Random.Range(0f, 4f));
+				this.QueueAudio(this.bal_praises[num]);
+				this.NewProblem();
+			}
+			else
+			{
+				this.problemsWrong++;
+				this.results[this.problem - 1].texture = this.incorrect;
+				if (!this.gc.spoopMode)
+				{
+					this.baldiFeed.SetTrigger("angry");
+					this.gc.ActivateSpoopMode();
+				}
+				if (this.gc.mode == "story")
+				{
+					if (this.problem == 3)
+					{
+						this.baldiScript.GetAngry(1f);
+					}
+					else
+					{
+						this.baldiScript.GetTempAngry(0.25f);
+					}
+				}
+				else
+				{
+					this.baldiScript.GetAngry(1f);
+				}
+				this.ClearAudioQueue();
+				this.baldiAudio.Stop();
+				this.NewProblem();
+			}
+		}
+	}
+
+	// Token: 0x060009F8 RID: 2552 RVA: 0x00008008 File Offset: 0x00006208
+	private void QueueAudio(AudioClip sound)
+	{
+		this.audioQueue[this.audioInQueue] = sound;
+		this.audioInQueue++;
+	}
+
+	// Token: 0x060009F9 RID: 2553 RVA: 0x00008026 File Offset: 0x00006226
+	private void PlayQueue()
+	{
+		this.baldiAudio.PlayOneShot(this.audioQueue[0]);
+		this.UnqueueAudio();
+	}
+
+	// Token: 0x060009FA RID: 2554 RVA: 0x000238A0 File Offset: 0x00021AA0
+	private void UnqueueAudio()
+	{
+		for (int i = 1; i < this.audioInQueue; i++)
+		{
+			this.audioQueue[i - 1] = this.audioQueue[i];
+		}
+		this.audioInQueue--;
+	}
+
+	// Token: 0x060009FB RID: 2555 RVA: 0x00008041 File Offset: 0x00006241
+	private void ClearAudioQueue()
+	{
+		this.audioInQueue = 0;
+	}
+
+	// Token: 0x060009FC RID: 2556 RVA: 0x000238E4 File Offset: 0x00021AE4
+	private void ExitGame()
+	{
+		if ((this.problemsWrong <= 0) & (this.gc.mode == "endless"))
+		{
+			this.baldiScript.GetAngry(-1f);
+		}
+		this.gc.DeactivateLearningGame(base.gameObject);
+	}
+
+	// Token: 0x060009FD RID: 2557 RVA: 0x0002393C File Offset: 0x00021B3C
+	public void ButtonPress(int value)
+	{
+		if ((value >= 0) & (value <= 9))
+		{
+			this.playerAnswer.text = this.playerAnswer.text + value;
+		}
+		else if (value == -1)
+		{
+			this.playerAnswer.text = this.playerAnswer.text + "-";
+		}
+		else
+		{
+			this.playerAnswer.text = string.Empty;
+		}
+	}
+
+	// Token: 0x060009FE RID: 2558 RVA: 0x000239C0 File Offset: 0x00021BC0
+	private IEnumerator CheatText(string text)
+	{
+		for (;;)
+		{
+			this.questionText.text = text;
+			this.questionText2.text = string.Empty;
+			this.questionText3.text = string.Empty;
+			yield return new WaitForEndOfFrame();
+		}
+		yield break;
+	}
+
+	// Token: 0x040006AE RID: 1710
+	public GameControllerScript gc;
+
+	// Token: 0x040006AF RID: 1711
+	public BaldiScript baldiScript;
+
+	// Token: 0x040006B0 RID: 1712
+	public Vector3 playerPosition;
+
+	// Token: 0x040006B1 RID: 1713
+	public GameObject mathGame;
+
+	// Token: 0x040006B2 RID: 1714
+	public RawImage[] results = new RawImage[3];
+
+	// Token: 0x040006B3 RID: 1715
+	public Texture correct;
+
+	// Token: 0x040006B4 RID: 1716
+	public Texture incorrect;
+
+	// Token: 0x040006B5 RID: 1717
+	public TMP_InputField playerAnswer;
+
+	// Token: 0x040006B6 RID: 1718
+	public TMP_Text questionText;
+
+	// Token: 0x040006B7 RID: 1719
+	public TMP_Text questionText2;
+
+	// Token: 0x040006B8 RID: 1720
+	public TMP_Text questionText3;
+
+	// Token: 0x040006B9 RID: 1721
+	public Animator baldiFeed;
+
+	// Token: 0x040006BA RID: 1722
+	public Transform baldiFeedTransform;
+
+	// Token: 0x040006BB RID: 1723
+	public AudioClip bal_plus;
+
+	// Token: 0x040006BC RID: 1724
+	public AudioClip bal_minus;
+
+	// Token: 0x040006BD RID: 1725
+	public AudioClip bal_times;
+
+	// Token: 0x040006BE RID: 1726
+	public AudioClip bal_divided;
+
+	// Token: 0x040006BF RID: 1727
+	public AudioClip bal_equals;
+
+	// Token: 0x040006C0 RID: 1728
+	public AudioClip bal_howto;
+
+	// Token: 0x040006C1 RID: 1729
+	public AudioClip bal_intro;
+
+	// Token: 0x040006C2 RID: 1730
+	public AudioClip bal_screech;
+
+	// Token: 0x040006C3 RID: 1731
+	public AudioClip[] bal_numbers = new AudioClip[10];
+
+	// Token: 0x040006C4 RID: 1732
+	public AudioClip[] bal_praises = new AudioClip[5];
+
+	// Token: 0x040006C5 RID: 1733
+	public AudioClip[] bal_problems = new AudioClip[3];
+
+	// Token: 0x040006C6 RID: 1734
+	public Button firstButton;
+
+	// Token: 0x040006C7 RID: 1735
+	private float endDelay;
+
+	// Token: 0x040006C8 RID: 1736
+	private int problem;
+
+	// Token: 0x040006C9 RID: 1737
+	private int audioInQueue;
+
+	// Token: 0x040006CA RID: 1738
+	private float num1;
+
+	// Token: 0x040006CB RID: 1739
+	private float num2;
+
+	// Token: 0x040006CC RID: 1740
+	private float num3;
+
+	// Token: 0x040006CD RID: 1741
+	private int sign;
+
+	// Token: 0x040006CE RID: 1742
+	private float solution;
+
+	// Token: 0x040006CF RID: 1743
+	private string[] hintText = new string[] { "I GET ANGRIER FOR EVERY PROBLEM YOU GET WRONG", "I HEAR EVERY DOOR YOU OPEN" };
+
+	// Token: 0x040006D0 RID: 1744
+	private string[] endlessHintText = new string[] { "That's more like it...", "Keep up the good work or see me after class..." };
+
+	// Token: 0x040006D1 RID: 1745
+	private bool questionInProgress;
+
+	// Token: 0x040006D2 RID: 1746
+	private bool impossibleMode;
+
+	// Token: 0x040006D3 RID: 1747
+	private bool joystickEnabled;
+
+	// Token: 0x040006D4 RID: 1748
+	private int problemsWrong;
+
+	// Token: 0x040006D5 RID: 1749
+	private AudioClip[] audioQueue = new AudioClip[20];
+
+	// Token: 0x040006D6 RID: 1750
+	public AudioSource baldiAudio;
+}
