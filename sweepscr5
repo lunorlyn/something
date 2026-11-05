@@ -1,0 +1,231 @@
+using System;
+using UnityEngine;
+using UnityEngine.AI;
+
+// Token: 0x020000F8 RID: 248
+public class SweepScript : MonoBehaviour
+{
+	// Token: 0x06000A7C RID: 2684 RVA: 0x00025FC4 File Offset: 0x000241C4
+	private void Start()
+	{
+		this.agent = base.GetComponent<NavMeshAgent>();
+		this.audioDevice = base.GetComponent<AudioSource>();
+		this.origin = base.transform.position;
+		this.waitTime = 0f;
+		this.active = false;
+		this.wanders = 0;
+		this.controller = global::UnityEngine.Object.FindObjectOfType<GameControllerScript>();
+		this.lastPosition = base.transform.position;
+		this.stuckTimer = 0f;
+		this.IgnoreOtherSweepCollisions();
+		if (this.agent != null)
+		{
+			this.agent.avoidancePriority = global::UnityEngine.Random.Range(20, 80);
+		}
+	}
+
+	// Token: 0x06000A7D RID: 2685 RVA: 0x00026064 File Offset: 0x00024264
+	private void Update()
+	{
+		if (this.coolDown > 0f)
+		{
+			this.coolDown -= Time.deltaTime;
+		}
+		if (this.controller == null)
+		{
+			this.controller = global::UnityEngine.Object.FindObjectOfType<GameControllerScript>();
+		}
+		if (this.controller != null && this.controller.notebooks >= 2 && !this.active)
+		{
+			this.active = true;
+			this.wanders = 0;
+			this.Wander();
+			if (this.audioDevice != null && this.aud_Intro != null)
+			{
+				this.audioDevice.PlayOneShot(this.aud_Intro);
+			}
+		}
+	}
+
+	// Token: 0x06000A7E RID: 2686 RVA: 0x00026110 File Offset: 0x00024310
+	private void FixedUpdate()
+	{
+		if (!this.active || this.agent == null || !this.agent.enabled)
+		{
+			this.lastPosition = base.transform.position;
+			this.stuckTimer = 0f;
+			return;
+		}
+		float magnitude = this.agent.velocity.magnitude;
+		if (Vector3.Distance(base.transform.position, this.lastPosition) < 0.015f && magnitude > 0.1f)
+		{
+			this.stuckTimer += Time.fixedDeltaTime;
+		}
+		else
+		{
+			this.stuckTimer = 0f;
+		}
+		this.lastPosition = base.transform.position;
+		if (this.coolDown > 0f)
+		{
+			return;
+		}
+		if (magnitude <= 0.1f)
+		{
+			this.stuckTimer = 0f;
+			this.Wander();
+			return;
+		}
+		if (this.stuckTimer >= 2f)
+		{
+			this.stuckTimer = 0f;
+			this.agent.ResetPath();
+			this.Wander();
+		}
+	}
+
+	// Token: 0x06000A7F RID: 2687 RVA: 0x00026218 File Offset: 0x00024418
+	private void Wander()
+	{
+		if (this.agent == null || !this.agent.enabled || this.wanderer == null || this.wanderTarget == null)
+		{
+			return;
+		}
+		this.wanderer.GetNewTargetHallway();
+		this.agent.SetDestination(this.wanderTarget.position);
+		this.coolDown = 1f;
+		this.wanders++;
+	}
+
+	// Token: 0x06000A80 RID: 2688 RVA: 0x00002084 File Offset: 0x00000284
+	private void GoHome()
+	{
+	}
+
+	// Token: 0x06000A81 RID: 2689 RVA: 0x00026298 File Offset: 0x00024498
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other == null || this.IsSweepCollider(other))
+		{
+			return;
+		}
+		if ((other.CompareTag("NPC") || other.CompareTag("Player")) && this.audioDevice != null && this.aud_Sweep != null)
+		{
+			this.audioDevice.PlayOneShot(this.aud_Sweep);
+		}
+	}
+
+	// Token: 0x06000A82 RID: 2690 RVA: 0x00026300 File Offset: 0x00024500
+	private void IgnoreOtherSweepCollisions()
+	{
+		Collider[] componentsInChildren = base.GetComponentsInChildren<Collider>(true);
+		foreach (SweepScript sweepScript in global::UnityEngine.Object.FindObjectsOfType<SweepScript>())
+		{
+			if (!(sweepScript == null) && !(sweepScript == this))
+			{
+				Collider[] componentsInChildren2 = sweepScript.GetComponentsInChildren<Collider>(true);
+				foreach (Collider collider in componentsInChildren)
+				{
+					if (!(collider == null))
+					{
+						foreach (Collider collider2 in componentsInChildren2)
+						{
+							if (collider2 != null && collider2 != collider)
+							{
+								Physics.IgnoreCollision(collider, collider2, true);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Token: 0x06000A83 RID: 2691 RVA: 0x000263B4 File Offset: 0x000245B4
+	private bool IsSweepCollider(Collider other)
+	{
+		if (other == null)
+		{
+			return false;
+		}
+		if (other.GetComponent<SweepScript>() != null || other.GetComponentInParent<SweepScript>() != null || other.GetComponentInChildren<SweepScript>() != null)
+		{
+			return true;
+		}
+		Transform root = other.transform.root;
+		return root != null && root.name.StartsWith("Gotta Sweep");
+	}
+
+	// Token: 0x06000A84 RID: 2692 RVA: 0x00026420 File Offset: 0x00024620
+	private void OnTriggerStay(Collider other)
+	{
+		if (other == null || other.CompareTag("Player") || this.IsSweepCollider(other))
+		{
+			return;
+		}
+		if (!other.CompareTag("NPC"))
+		{
+			return;
+		}
+		if (this.agent == null || !this.agent.enabled)
+		{
+			return;
+		}
+		Vector3 velocity = this.agent.velocity;
+		velocity.y = 0f;
+		if (velocity.sqrMagnitude <= 0.01f)
+		{
+			return;
+		}
+		NavMeshAgent componentInParent = other.GetComponentInParent<NavMeshAgent>();
+		if (componentInParent != null && componentInParent != this.agent && componentInParent.enabled)
+		{
+			componentInParent.Move(velocity * Time.deltaTime);
+			return;
+		}
+		BullyScript componentInParent2 = other.GetComponentInParent<BullyScript>();
+		((componentInParent2 != null) ? componentInParent2.transform : other.transform).position += velocity * Time.deltaTime;
+	}
+
+	// Token: 0x0400079A RID: 1946
+	public Transform wanderTarget;
+
+	// Token: 0x0400079B RID: 1947
+	public AILocationSelectorScript wanderer;
+
+	// Token: 0x0400079C RID: 1948
+	public float coolDown;
+
+	// Token: 0x0400079D RID: 1949
+	public float waitTime;
+
+	// Token: 0x0400079E RID: 1950
+	public int wanders;
+
+	// Token: 0x0400079F RID: 1951
+	public bool active;
+
+	// Token: 0x040007A0 RID: 1952
+	private Vector3 origin;
+
+	// Token: 0x040007A1 RID: 1953
+	public AudioClip aud_Sweep;
+
+	// Token: 0x040007A2 RID: 1954
+	public AudioClip aud_Intro;
+
+	// Token: 0x040007A3 RID: 1955
+	private NavMeshAgent agent;
+
+	// Token: 0x040007A4 RID: 1956
+	private AudioSource audioDevice;
+
+	// Token: 0x040007A5 RID: 1957
+	private GameControllerScript controller;
+
+	// Token: 0x040007A6 RID: 1958
+	private Vector3 lastPosition;
+
+	// Token: 0x040007A7 RID: 1959
+	private float stuckTimer;
+}
